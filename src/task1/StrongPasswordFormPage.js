@@ -11,7 +11,7 @@ export const StrongPasswordFormPage = () => {
   };
 
   return (
-    <>
+    <div data-testid="strong-password-page">
       <h1>Task - React</h1>
       <TextField
         required
@@ -23,7 +23,8 @@ export const StrongPasswordFormPage = () => {
             handleSubmit(e.target.value);
           }
         }}
+        inputProps={{ "data-testid": "password-input" }}
       />
-    </>
+    </div>
   );
 };

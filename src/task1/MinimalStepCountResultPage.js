@@ -17,9 +17,9 @@ export const MinimalStepCountResultPage = () => {
   }, [password]);
 
   return (
-    <>
+    <div data-testid="minimal-step-count-page">
       <h1>Minimal step count is</h1>
-      {steps}
-    </>
+      <span data-testid="steps-count">{steps}</span>
+    </div>
   );
 };
